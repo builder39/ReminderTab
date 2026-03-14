@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReminderTab – Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #f5f5f7;
+      --surface: #ffffff;
+      --border: rgba(0,0,0,0.08);
+      --text: #1c1c1e;
+      --text-2: #6e6e73;
+      --accent: #5b6af0;
+      --radius: 12px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+      padding: 48px 20px;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .header-text h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .header-text p {
+      font-size: 13px;
+      color: var(--text-2);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .card p {
+      color: var(--text-2);
+      font-size: 14px;
+    }
+
+    .card p strong {
+      color: var(--text);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e6f9ec;
+      color: #1a7a3c;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      align-self: flex-start;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    ul li {
+      display: flex;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text-2);
+    }
+
+    ul li::before {
+      content: '—';
+      color: var(--accent);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    ul li strong {
+      color: var(--text);
+    }
+
+    .footer {
+      font-size: 12px;
+      color: var(--text-2);
+      text-align: center;
+      padding-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="header">
+      <div class="header-text">
+        <h1>ReminderTab</h1>
+        <p>Privacy Policy &mdash; Last updated March 14, 2026</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Overview</h2>
+      <span class="badge">No data collected</span>
+      <p>
+        ReminderTab does <strong>not collect, transmit, or share any personal data</strong>.
+        Everything the extension stores stays entirely on your device and is never sent anywhere.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>What We Store Locally</h2>
+      <p>The extension saves the following data to your browser's local storage <strong>only on your device</strong>:</p>
+      <ul>
+        <li><strong>Task text and reminder times</strong> &mdash; the tasks you create and any reminder times you set.</li>
+        <li><strong>Dark mode preference</strong> &mdash; whether you have dark mode enabled.</li>
+        <li><strong>Notifications preference</strong> &mdash; whether you have notifications turned on or off.</li>
+        <li><strong>Draft input</strong> &mdash; your unsubmitted task text and timer settings, saved so they are not lost if the popup closes.</li>
+      </ul>
+      <p>This data exists solely to make the extension work. It is never read by us or any third party.</p>
+    </div>
+
+    <div class="card">
+      <h2>What We Do Not Do</h2>
+      <ul>
+        <li>We do <strong>not</strong> collect names, email addresses, or any personally identifiable information.</li>
+        <li>We do <strong>not</strong> track browsing history or the pages you visit.</li>
+        <li>We do <strong>not</strong> send any data to external servers or third-party services.</li>
+        <li>We do <strong>not</strong> use analytics, advertising, or tracking of any kind.</li>
+        <li>We do <strong>not</strong> share data with anyone, ever.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Permissions Explained</h2>
+      <ul>
+        <li><strong>storage</strong> &mdash; Saves your tasks and preferences locally on your device.</li>
+        <li><strong>alarms</strong> &mdash; Schedules reminders to fire at the time you set.</li>
+        <li><strong>notifications</strong> &mdash; Displays a native browser notification when a reminder is due.</li>
+        <li><strong>scripting</strong> &mdash; Injects a visual reminder overlay into the current webpage when a reminder fires.</li>
+        <li><strong>tabs</strong> &mdash; Identifies the active tab to determine where to show the reminder overlay.</li>
+        <li><strong>windows</strong> &mdash; Opens a small fallback notification window when the active tab cannot receive an overlay.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Data Deletion</h2>
+      <p>
+        All locally stored data can be deleted at any time by removing the extension from your browser.
+        Uninstalling ReminderTab clears all data it has stored. No data exists anywhere else.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Changes to This Policy</h2>
+      <p>
+        If this policy ever changes, the updated version will be distributed with the extension and the
+        date at the top of this page will be updated. We will never introduce data collection without
+        updating this policy first.
+      </p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 ReminderTab. All rights reserved.
+    </div>
+
+  </div>
+</body>
+</html>
