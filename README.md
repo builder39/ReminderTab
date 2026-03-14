@@ -1,2 +1,0 @@
-# ReminderTab
-ReminderTab Privacy
